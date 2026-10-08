@@ -1,0 +1,73 @@
+Task 1
+
+gh repo fork danilofreire/datasci350-quiz02
+
+quarto create project website .
+
+Task 2
+
+echo "/_site/" >> .gitignore
+
+echo "__pycache__/" >> .gitignore
+
+git add .gitignore
+
+git commit -m "Add gitignore"
+
+Task 3
+
+nano _quarto.yml
+
+Task 4
+
+rm about.qmd
+
+nano _quarto.yml
+
+Task 5
+
+nano _quarto.yml
+
+Task 6
+
+nano index.qmd
+
+Task 7
+
+touch budget-revenue.qmd
+
+nano budget-revenue.qmd
+
+Task 8
+
+touch runtime-rating.qmd
+
+nano runtime-rating.qmd
+
+Task 9
+
+touch bond.qmd
+
+nano bond.qmd
+
+Task 10
+
+quarto render
+
+Task 11
+
+quarto publish gh-pages
+
+Task 13
+
+touch commands.txt
+
+nano commands.txt
+
+git add commands.txt
+
+git commit -m "Add command log'
+
+Task 14
+
+git push
