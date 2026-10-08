@@ -1,0 +1,29 @@
+---
+title: "Revenue of Bond Films"
+author: "Elijah Coulanges"
+---
+
+## Introduction
+
+## Plot
+
+```{python}
+#| echo: true
+#| fig-cap: "Bond Films' Revenue"
+#| label: fig-bond
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+bond = films[films["franchise'] == "James Bond"]
+
+
+plt.plot(bond['year'], films['revenue_musd'}
+
+firstyr = min(bond['year'])
+lastyr = max(bond['year'])
+```
+
+The first Bond year is '{python} int(firstyr)'. The last Bond year is '{python} int(lastyr)'.

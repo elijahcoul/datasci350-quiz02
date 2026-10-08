@@ -1,0 +1,25 @@
+---
+title: "Scatterplot of Budget Against Revenue"
+author: "Elijah Coulanges"
+---
+
+## Introduction
+
+@fig-firstplot plots budget against revenue with budget as the independent varaible and budget as the dependent variable.
+
+## Plot
+
+```{python}
+#| echo: true
+#| layout-ncol: 2
+#| fig-cap: "Budget against revenue"
+#| label: fig-firstplot
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+plt.scatter(films['budget_musd'], films['revenue_musd'])
+```
+
+

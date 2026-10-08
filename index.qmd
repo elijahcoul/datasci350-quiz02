@@ -1,0 +1,15 @@
+---
+title: "Quiz 02 Home Page"
+---
+
+The dataset includes 104 popular films from 1980 to 2025 and information related to performance and ratings. This includes budget, revenues, runtime, and IMDb ratings.
+
+# Links
+
+["Budget/Revenue Analysis"](budget-revenue.qmd)
+
+["Runtime/Rating Analysis"](runtime-rating.qmd)
+
+["Bond Revnue Analysis"](bond.qmd)
+
+AI tools used during the quiz were Google Gemini to quickly search if plt.scatter() was the right command for a scatter plot.
