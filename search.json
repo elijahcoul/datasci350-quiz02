@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quiz 02 Home Page",
+    "section": "",
+    "text": "The dataset includes 104 popular films from 1980 to 2025 and information related to performance and ratings. This includes budget, revenues, runtime, and IMDb ratings.\n\nLinks\n“Budget/Revenue Analysis”\n“Runtime/Rating Analysis”\n“Bond Revnue Analysis”\nAI tools used during the quiz were Google Gemini to quickly search if plt.scatter() was the right command for a scatter plot."
+  },
+  {
+    "objectID": "runtime-rating.html",
+    "href": "runtime-rating.html",
+    "title": "Scatterplot of Runtime Against Rating",
+    "section": "",
+    "text": "Figure 1 plots runtime against revenue with rating as the independent variable and rating as the dependent variable."
+  },
+  {
+    "objectID": "runtime-rating.html#introduction",
+    "href": "runtime-rating.html#introduction",
+    "title": "Scatterplot of Runtime Against Rating",
+    "section": "",
+    "text": "Figure 1 plots runtime against revenue with rating as the independent variable and rating as the dependent variable."
+  },
+  {
+    "objectID": "runtime-rating.html#plot",
+    "href": "runtime-rating.html#plot",
+    "title": "Scatterplot of Runtime Against Rating",
+    "section": "Plot",
+    "text": "Plot\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nplt.scatter(films['runtime_min'], films['imdb_rating'])\n\n\n\n\n\n\n\n\n\nFigure 1: Runtime against rating\n\n\n\n\n\n\n\nfilms[\"decade\"] = films[\"year\"] // 10 * 10\nfilms.groupby(\"decade\")[\"imdb_rating\"].mean().round(2)\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64"
+  },
+  {
+    "objectID": "budget-revenue.html",
+    "href": "budget-revenue.html",
+    "title": "Scatterplot of Budget Against Revenue",
+    "section": "",
+    "text": "Figure 1 plots budget against revenue with budget as the independent varaible and budget as the dependent variable."
+  },
+  {
+    "objectID": "budget-revenue.html#introduction",
+    "href": "budget-revenue.html#introduction",
+    "title": "Scatterplot of Budget Against Revenue",
+    "section": "",
+    "text": "Figure 1 plots budget against revenue with budget as the independent varaible and budget as the dependent variable."
+  },
+  {
+    "objectID": "budget-revenue.html#plot",
+    "href": "budget-revenue.html#plot",
+    "title": "Scatterplot of Budget Against Revenue",
+    "section": "Plot",
+    "text": "Plot\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nplt.scatter(films['budget_musd'], films['revenue_musd'])\n\n\n\n\n\n\n\n\n\nFigure 1: Budget against revenue"
+  },
+  {
+    "objectID": "bond.html#plot",
+    "href": "bond.html#plot",
+    "title": "Revenue of Bond Films",
+    "section": "Plot",
+    "text": "Plot\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nbond = films[films['franchise'] == \"James Bond\"]\n\n\nplt.plot(bond['year'], bond['revenue_musd'])\n\nfirstyr = min(bond['year'])\nlastyr = max(bond['year'])\n\n\n\n\n\n\n\nFigure 1: Bond Films’ Revenue\n\n\n\n\n\nThe first Bond year is ‘{python} int(firstyr)’. The last Bond year is ‘{python} int(lastyr)’."
+  }
+]
